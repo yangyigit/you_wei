@@ -294,15 +294,15 @@ body {
 }
 
 .bg-1 {
-    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_connect.7962262.jpg) center center / cover no-repeat;
+    background: url(../images/index-solution1.png) center center / cover no-repeat;
 }
 
 .bg-2 {
-    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_api.9095cbb.jpg) center center / cover no-repeat;
+    background: url(../images/index-solution2.png) center center / cover no-repeat;
 }
 
 .bg-3 {
-    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_international.3ca56f4.jpg) center center / cover no-repeat;
+    background: url(../images/index-solution3.png) center center / cover no-repeat;
 }
 
 .index-case-content {

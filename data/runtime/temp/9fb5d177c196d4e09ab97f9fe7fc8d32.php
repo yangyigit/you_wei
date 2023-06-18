@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:44:"./application/admin/template/index/index.htm";i:1686988362;s:79:"/Users/hengji/开发/yangyidemo/application/admin/template/public/theme_css.htm";i:1686988339;s:77:"/Users/hengji/开发/yangyidemo/application/admin/template/public/menubox.htm";i:1571728724;s:74:"/Users/hengji/开发/yangyidemo/application/admin/template/public/left.htm";i:1686988339;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:44:"./application/admin/template/index/index.htm";i:1687077071;s:79:"/Users/hengji/开发/yangyidemo/application/admin/template/public/theme_css.htm";i:1686988339;s:77:"/Users/hengji/开发/yangyidemo/application/admin/template/public/menubox.htm";i:1571728724;s:74:"/Users/hengji/开发/yangyidemo/application/admin/template/public/left.htm";i:1687077264;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -11,7 +11,7 @@
 <!-- Apple devices fullscreen -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen"/>
-<title><?php echo (isset($global['web_name']) && ($global['web_name'] !== '')?$global['web_name']:''); ?>-<?php if(!(empty($is_eyou_authortoken) || (($is_eyou_authortoken instanceof \think\Collection || $is_eyou_authortoken instanceof \think\Paginator ) && $is_eyou_authortoken->isEmpty()))): ?>易优CMS企业网站管理系统<?php endif; ?><?php echo $version; ?></title>
+<title><?php echo (isset($global['web_name']) && ($global['web_name'] !== '')?$global['web_name']:''); ?>-<?php if(!(empty($is_eyou_authortoken) || (($is_eyou_authortoken instanceof \think\Collection || $is_eyou_authortoken instanceof \think\Paginator ) && $is_eyou_authortoken->isEmpty()))): endif; ?><?php echo $version; ?></title>
 <script type="text/javascript">
     var eyou_basefile = "<?php echo \think\Request::instance()->baseFile(); ?>";
     var module_name = "<?php echo MODULE_NAME; ?>";
@@ -169,11 +169,7 @@
 <div class="admincp-container unfold">
 <div class="eycms_cont_left hidden-xs">
     <dl class="eylogo">
-        <?php if(!(empty($is_eyou_authortoken) || (($is_eyou_authortoken instanceof \think\Collection || $is_eyou_authortoken instanceof \think\Paginator ) && $is_eyou_authortoken->isEmpty()))): ?>
-        <a href="<?php echo \think\Request::instance()->url(); ?>"><img id="web_adminlogo" src="<?php echo (isset($web_adminlogo) && ($web_adminlogo !== '')?$web_adminlogo:'/public/static/admin/images/logo_ey.png'); ?>?v=<?php echo time(); ?>" alt="点击刷新" title="点击刷新"></a>
-        <?php else: ?>
         <a href="<?php echo \think\Request::instance()->url(); ?>"><img id="web_adminlogo" src="<?php echo (isset($web_adminlogo) && ($web_adminlogo !== '')?$web_adminlogo:'/public/static/admin/images/logo.png'); ?>?v=<?php echo time(); ?>" alt="点击刷新" title="点击刷新"></a>
-        <?php endif; ?>
     </dl>
 
     <dl>
