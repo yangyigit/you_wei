@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css" media="screen"/>
+<script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+<script>
+function setScale() {
+    if (window.top !== window) {
+        return;
+    }
+    var pageScale = 1;
+
+    var width = document.documentElement.clientWidth || 320;
+    var height = document.documentElement.clientHeight || 486;
+
+    if (width / height >= 320 / 486) {
+        pageScale = height / 486;
+    } else {
+        pageScale = width / 320;
+    }
+    var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+    document.getElementById('viewport').setAttribute('content', content);
+}
+setScale();
+</script>
+<style>
+#nb_icon_wrap {
+	display: none !important;
+}
+</style>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body  >
+<link type="text/css" rel="stylesheet"  href="{eyou:global name='web_templets_m' /}/skin/css/swiper.min.css" />
+<link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_m' /}/skin/css/page.css'  />
+<div class="page-header page-header-jianzhan" style="background-image: url({eyou:global name='web_templets_m' /}/skin/images//service.jpg);background-size: cover;">
+  <div class="cover"></div>
+  <div class="s">
+    <h1>网站定制开发</h1>
+    <div class="line"></div>
+    <p>坚持“专业、专注、原创、效率”，高端定制开发网站</p>
+  </div>
+</div>
+<div class="page-service">
+  <div class="page-title">
+    <div class="title">服务项目</div>
+    <div class="title-line"></div>
+    <div class="tips">只为实现每一次邂逅总能超越期待</div>
+  </div>
+  <div class="wp">
+    <div class="s cl">
+      <div class="swiper-container page-service-loop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="data"> <a href="javascript:">
+              <div class="title">企业网站</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gw.png" width="45" height="45" /></div>
+              <p class="des">企业门户官网/企业营销型网站定制开发、设计、建设</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">行业门户</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/hy.png" width="45" height="45" /></div>
+              <p class="des">垂直行业综合门户开发，资讯、交易、分类信息、下载等</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">购物商城</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/shop.png" width="45" height="45" /></div>
+              <p class="des">单/多用户商城、订单、支付、提现、财务管理</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">社区论坛</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/bbs.png" width="45" height="45" /></div>
+              <p class="des">会员管理及分级权限、板块分级及权限、帖子管理</p>
+              </a> </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="data"> <a href="javascript:">
+              <div class="title">政府官网</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png" width="45" height="45" /></div>
+              <p class="des">政府机构信息化建设，便民服务窗口，安全稳定</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">活动官网</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/action.png" width="45" height="45" /></div>
+              <p class="des">活动官方网站，信息发布、投票、报名、评比等</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">O2O系统</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/o2o.png" width="45" height="45" /></div>
+              <p class="des">商家入驻、LBS定位、商品、附近商家、购物车、会员管理</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">外贸网站</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/global.png" width="45" height="45" /></div>
+              <p class="des">企业出海必备，多语言，针对Google针对性优化</p>
+              </a> </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{eyou:include file='down.htm'/}
+<div class="showmsg"></div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

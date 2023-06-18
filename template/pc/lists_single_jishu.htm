@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+  <link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_pc' /}/skin/css/page.css'/>
+  <div class="page-header page-header-jianzhan" style="background: url({eyou:global name='web_templets_pc' /}/skin/images/service.jpg) no-repeat center top;">
+    <div class="s">
+      <div class="wp">
+        <div class="wps">
+          <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+          <div class="line"></div>
+          <p>{$eyou.field.seo_description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-service">
+    <div class="page-title">
+      <div class="title">{$eyou.field.typename}</div>
+      <div class="title-line"></div>
+      <div class="tips">{$eyou.field.seo_description}</div>
+    </div>
+    <div class="wp">
+      <div class="s cl">
+        <div class="data"> <a href="javascript:">
+          <div class="title">技术支援</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/zhiyuan.png" width="45" height="45"></div>
+          <p class="des">遇到web开发相关的疑难杂症都可以来尝试一下</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">安全防护</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/anquan.png" width="45" height="45"></div>
+          <p class="des">修复SQL注入、XSS等安全漏洞，API安全评估与审计</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">技术方案</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/fangan.png" width="45" height="45"></div>
+          <p class="des">基于您的想法和需求，选择最适合项目的技术方案</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">数据迁移</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/gov.png" width="45" height="45"></div>
+          <p class="des">网站数据迁移、数据库跨平台数据迁移等</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">服务器运维</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/data.png" width="45" height="45"></div>
+          <p class="des">服务器环境配置、安全防护、日常运维及监控</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">SEO支持</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/seo.png" width="45" height="45"></div>
+          <p class="des">代码SEO优化建议、数据自动主动提交搜索引擎工具开发</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">模板定制</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/moban.png" width="45" height="45"></div>
+          <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序模板定制</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">插件定制</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/chajian.png" width="45" height="45"></div>
+          <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序插件定制</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  {eyou:include file='down.htm'/}
+  <div class="showmsg"></div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

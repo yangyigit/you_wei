@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+<div class="cat-header" style="background-image: url({eyou:global name='web_templets_pc' /}/skin/images/h-top-1.jpg);">
+  <div class="s">
+    <div class="wp">
+      <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+      <div class="line"></div>
+      <p>{$eyou.field.seo_description}</p>
+    </div>
+  </div>
+</div>
+<div class="cat-list">
+  <ul class="wp">
+    {eyou:channel type="first" id="field" currentstyle="current-cat"}
+    <li class="cat-item {$field.currentstyle}"><a href="{$field.typeurl}" >{$field.typename}</a> </li>
+    {/eyou:channel}
+  </ul>
+</div>
+<div class="in-cont wp cl">
+  <div class="mn">
+    <div class="list_news list"> {eyou:list pagesize='5'}
+      <dl class="cl">
+        <dd class="m"> <a href="{$field.arcurl}"> <img width="300" height="94" src="{$field.litpic}" class="attachment-post-thumbnail wp-post-image" alt="3523" /> </a> </dd>
+        <dt> <a href="{$field.typeurl}" class="cat">{$field.typename}<i></i></a> <a href="{$field.arcurl}" title="{$field.title}">{$field.title}</a></dt>
+        <p> <em>{$field.add_time|MyDate='Y-m-d',###} </em> <em>查看({$field.click})</em> </p>
+        <dd> {$field.seo_description|msubstr=###,0,300/2}...</dd>
+      </dl>
+      {/eyou:list} </div>
+    <script>
+$(".list_news dl").first().addClass('first');
+$(".list_news dl").last().addClass('last');
+</script>
+    <div class='pagination'>{eyou:pagelist listitem='index,end,pre,next,pageno' listsize='1'/}</div>
+  </div>
+  <div class="sidebar">
+    <div class="tuijian"> {eyou:arclist row='1' titlelen='20' orderby='add_time'} <a href="{$field.arcurl}">
+      <h2 class="cl"><span>{$field.typename}</span></h2>
+      <h3>{$field.title}</h3>
+      <p>{$field.seo_description|msubstr=###,0,200/2}...</p>
+      </a> {/eyou:arclist} </div>
+    {eyou:channelartlist typeid='10,10'}
+    <div class="ser sidesub">
+      <h2>{eyou:field name='typename' /}</h2>
+      <ul class="ebox">
+        {eyou:channel type='son'}
+        <li class="sub sub-{$i}">
+          <div>
+            <h3>{$field.typename}</h3>
+            <p>{$field.seo_description}</p>
+            <a class="btn" href="{$field.typeurl}">查看详情</a> </div>
+        </li>
+        {/eyou:channel}
+        <li class="sub sub-5">
+          <div>
+            <h3>更多服务项目</h3>
+            <p> <a>{eyou:field name='seo_description' /}</a></p>
+            <a class="btn"  href="{eyou:field name='typeurl' /}">获取更多</a> </div>
+        </li>
+      </ul>
+    </div>
+    {/eyou:channelartlist}
+    <div class="contact" id="fix">
+      <h2 class="cl"> <span>联系吧</span> <a href="https://map.baidu.com/" class="ditu" rel="nofollow" target="_blank">在百度地图上找到我们</a> </h2>
+      <h3>电话：{eyou:global name='web_attr_1' /}</h3>
+      <p>如遇占线或暂未接听请拨：{eyou:global name='web_attr_2' /}</p>
+      <div class="qq"> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow" target="_blank">业务咨询</a> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow" target="_blank">技术咨询</a> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow"  target="_blank">售后服务</a> </div>
+    </div>
+  </div>
+  <script>
+//固定滚动
+(function(){
+var oDiv=document.getElementById("fix");
+var H=120,iE6;
+var Y=oDiv;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+iE6=window.ActiveXObject&&!window.XMLHttpRequest;
+if(!iE6){
+window.onscroll=function()
+{
+var s=document.body.scrollTop||document.documentElement.scrollTop;
+if(s>H){oDiv.className="contact  fixed";if(iE6){oDiv.style.top=(s-H)+"px";}}
+else{oDiv.className="contact ";}	
+};
+}
+
+})();
+</script> 
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

@@ -1,0 +1,273 @@
+body {
+	background: #fff;
+}
+/*页面公共css*/
+.page-header {
+	height: 180px;
+	position: relative;
+	background-size: cover;
+}
+.page-header .cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);
+}
+.page-header .s {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	margin-top: -36px;
+	z-index: 2;
+}
+.page-header h1 {
+	margin-left: 15px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #eee;
+}
+.page-header .line {
+	width: 40px;
+	height: 2px;
+	background: #0595c7;
+	margin: 5px 0;
+	margin-left: 15px;
+}
+.page-header p {
+	margin-left: 15px;
+	font-size: 12px;
+	color: #bbb;
+	line-height: 30px;
+}
+.page-header-jianzhan .cover {
+	background: rgba(0,0,0,0.6);
+}
+/*page-title*/
+.page-title {
+	text-align: center;
+}
+.page-title .title {
+	font-size: 20px;
+	line-height: 24px;
+	color: #333;
+}
+.page-title .tips {
+	font-size: 13px;
+	line-height: 16px;
+	color: #aaa;
+}
+.page-title .title-line {
+	height: 8px;
+}
+.page-service {
+	padding: 30px 0;
+}
+.page-service .s {
+	margin: 12px;
+	border-right: 1px #eee solid;
+	border-top: 1px #eee solid;
+	border-width: 0.5px;
+}
+.page-service .data {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.page-service .data a {
+	display: block;
+	padding: 12px 8px;
+	border-left: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+	border-width: 0.5px;
+}
+.page-service .m {
+	padding: 10px 0;
+}
+.page-service .m img {
+	width: auto;
+	height: 30px;
+}
+.page-service .data .title {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1px;
+}
+.page-service .data .des {
+	height: 54px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #aaa;
+}
+.page-service .swiper-pagination {
+	position: static;
+	padding: 5px 0 0;
+}
+.page-service .swiper-pagination-bullet {
+	width: 15px;
+	height: 4px;
+	border-radius: 0;
+	background: #555;
+}
+.page-service .swiper-pagination-bullet-active {
+	background: #0595c7;
+}
+.page-advantage {
+	padding: 30px 0;
+	background: #303449;
+	position: relative;
+}
+.page-advantage .page-title {
+	position: relative;
+	z-index: 2;
+}
+.page-advantage .title {
+	color: #eee;
+}
+.page-advantage .tips {
+	color: #aaa;
+}
+.page-advantage .s {
+	padding: 12px 12px 0;
+	position: relative;
+	z-index: 2;
+}
+.page-advantage .data {
+}
+.page-advantage dl {
+	padding: 12px 12px 12px 45px;
+	position: relative;
+}
+.page-advantage dt {
+	height: 32px;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.page-advantage dt span {
+	float: left;
+	display: block;
+	position: relative;
+	line-height: 22px;
+	padding-bottom: 10px;
+	color: #eee;
+}
+.page-advantage dt em {
+	position: absolute;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	background: #0595c7;
+	transition: all 0.3s;
+}
+.page-advantage .m {
+	position: absolute;
+	top: 12px;
+	left: 5px;
+	width: 30px;
+}
+.page-advantage .m img {
+	height: 30px;
+}
+.page-advantage .des {
+	font-size: 12px;
+	color: #999;
+	height: 36px;
+	overflow: hidden;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+.page-advantage .swiper-pagination {
+	position: static;
+	padding: 5px 0 0;
+}
+.page-advantage .swiper-pagination-bullet {
+	width: 15px;
+	height: 4px;
+	border-radius: 0;
+	background: #eee;
+}
+.page-advantage .swiper-pagination-bullet-active {
+	background: #0595c7;
+}
+.page-case {
+	padding: 30px 0;
+}
+.page-case .s {
+	padding-top: 20px;
+}
+.page-case .swiper-pagination {
+	position: static;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.page-case .swiper-pagination span {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	width: auto;
+	margin: 0 3px;
+	padding: 0 10px;
+	border: 1px #eee solid;
+	border: 0.5px #ddd solid;
+	border-radius: 1px;
+	cursor: pointer;
+	color: #666;
+	background: none;
+	opacity: 1;
+}
+.page-case .swiper-pagination .swiper-pagination-bullet-active {
+	border-color: #0595c7;
+	background: #0595c7;
+	color: #fff;
+}
+.page-case .m img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.page-case .info {
+	padding: 0 12px;
+}
+.page-case h6 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #333;
+	padding: 0 12px;
+}
+.page-case .info .des {
+	font-size: 13px;
+	line-height: 22px;
+	color: #888;
+}
+.page-case .info .tips {
+	margin: 10px 0;
+	font-size: 13px;
+	line-height: 22px;
+	color: #aaa;
+}
+.page-case .go-case {
+	margin-top: 10px;
+}
+.page-case .go-case a {
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #0595C7;
+	border: 1px #0595C7 solid;
+	border-radius: 2px;
+	text-align: center;
+	border-width: 0.5px;
+}
+.page-case .go-case a span {
+	color: #0595C7;
+}
+.page-case .go-case a em {
+	background: #0595C7;
+}

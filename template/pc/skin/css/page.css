@@ -1,0 +1,339 @@
+﻿/*  */
+body {
+	background: #fff;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background: none;
+	transition: 0.5s;
+}
+.s-header, .header:hover {
+	background: #ffffff;
+}
+/*页面公共css*/
+.page-header {
+	min-width: 1200px;
+	height: 450px;
+	position: relative;
+}
+/*.page-header .cover{ position: absolute; left: 0; right: 0; top:0; bottom: 0; background:rgba(0,0,0,0.3);}
+.page-header-jianzhan .cover{ background:rgba(0,0,0,0.5);}*/
+.page-header .s {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	margin-top: -55px;
+	z-index: 2;
+}
+.page-header h1 {
+	font-size: 32px;
+	line-height: 60px;
+	color: #eee;
+}
+.page-header .line {
+	width: 80px;
+	height: 2px;
+	background: #0595c7;
+	margin: 9px 0;
+}
+.page-header p {
+	font-size: 16px;
+	color: #ddd;
+	line-height: 30px;
+}
+/*page-title*/
+.page-title {
+	text-align: center;
+}
+.page-title .title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #333;
+}
+.page-title .tips {
+	font-size: 15px;
+	line-height: 15px;
+	color: #888;
+}
+.page-title .title-line {
+	height: 20px;
+}
+.page-service {
+	min-width: 1200px;
+	padding: 80px 0;
+}
+.page-service .s {
+	margin: 40px 40px 0;
+	border-right: 1px #ddd solid;
+	border-top: 1px #ddd solid;
+}
+.page-service .data {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.page-service .data a {
+	display: block;
+	padding: 20px;
+	border-left: 1px #ddd solid;
+	border-bottom: 1px #ddd solid;
+}
+.page-service .m {
+	padding: 15px 0;
+}
+.page-service .m img {
+	width: auto;
+	height: 45px;
+}
+.page-service .data .title {
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 1px;
+}
+.page-service .data .des {
+	padding: 0 15px;
+	height: 40px;
+	line-height: 20px;
+	font-size: 13px;
+	color: #aaa;
+}
+.page-advantage {
+	min-width: 1200px;
+	padding: 80px 0; /*background: url(../images/youshi.jpg) no-repeat bottom center;*/
+	background: #616892;
+	position: relative;
+}
+.page-advantage .page-title {
+	position: relative;
+	z-index: 2;
+}
+.page-advantage .title {
+	color: #eee;
+}
+.page-advantage .tips {
+	color: #aaa;
+}
+.page-advantage .cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.page-advantage .s {
+	padding: 40px 40px 0;
+	position: relative;
+	z-index: 2;
+}
+.page-advantage .data {
+	float: left;
+	width: 33.33%;
+}
+.page-advantage dl {
+	padding: 25px 25px 25px 75px;
+	position: relative;
+}
+.page-advantage dt {
+	height: 32px;
+	font-size: 18px;
+	margin-bottom: 13px;
+}
+.page-advantage dt span {
+	float: left;
+	display: block;
+	position: relative;
+	line-height: 22px;
+	padding-bottom: 13px;
+	color: #eee;
+}
+.page-advantage dt em {
+	position: absolute;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	background: #0595c7;
+	transition: all 0.3s;
+}
+.page-advantage dl:hover em {
+	width: 100%;
+}
+.page-advantage .m {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 30px;
+}
+.page-advantage .m img {
+	height: 36px;
+}
+.page-advantage .des {
+	font-size: 13px;
+	color: #999;
+	height: 44px;
+	overflow: hidden;
+	line-height: 22px;
+	letter-spacing: 1px;
+}
+.page-case {
+	min-width: 1200px;
+	padding: 80px 0;
+}
+.page-case .s {
+	padding-top: 40px;
+}
+.page-case .title-do {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.page-case .title-do li {
+	display: inline-block;
+*display: inline;
+	zoom: 1;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 6px;
+	padding: 0 15px;
+	border: 1px #ddd solid;
+	border-radius: 1px;
+	cursor: pointer;
+}
+.page-case .title-do li.on {
+	border-color: #0595c7;
+	background: #0595c7;
+}
+.page-case .title-do span {
+	color: #666;
+}
+.page-case .title-do li.on span {
+	color: #fff;
+}
+.page-case .n-k-t {
+	display: none;
+}
+.page-case .current {
+	display: block;
+}
+.page-case .m {
+	width: 49%;
+	text-align: right;
+}
+.page-case .m img {
+	width: 568px;
+	height: 480px;
+	vertical-align: middle;
+}
+.page-case .info {
+	width: 43%;
+	padding-right: 2%;
+	padding-top: 80px;
+}
+.page-case .info h6 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #333;
+}
+.page-case .info .des {
+	margin: 10px 0;
+	font-size: 14px;
+	line-height: 22px;
+	color: #888;
+}
+.page-case .info .tips {
+	margin: 10px 0;
+	font-size: 13px;
+	line-height: 22px;
+	color: #aaa;
+}
+.page-case .info a {
+	display: block;
+	margin-top: 20px;
+	width: 140px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #0595C7;
+	border: 1px #0595C7 solid;
+	border-radius: 2px;
+	text-align: center;
+}
+.page-case .info a span {
+	color: #0595C7;
+}
+.page-case .info a em {
+	background: #0595C7;
+}
+.page-case .info a:hover span {
+	color: #fff;
+}
+.page-contact {
+	min-width: 1200px;
+	padding: 70px 0;
+	background: #0595c7 url(../images/contact.jpg) no-repeat center;
+}
+.page-contact .s {
+	padding: 0 40px;
+}
+.page-contact .your-ask h6 {
+	font-size: 26px;
+	color: #fff;
+	line-height: 1;
+	margin-bottom: 8px;
+}
+.page-contact .your-ask li {
+	float: left;
+	margin-right: 20px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #eee;
+}
+.page-contact .info-box {
+	padding-top: 12px;
+}
+.page-contact .info-box input {
+	float: left;
+	padding: 0 10px;
+	margin-right: 10px;
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	border: 1px #eee solid;
+}
+.page-contact .info-box .username {
+	width: 160px;
+}
+.page-contact .info-box .telephone {
+	width: 160px;
+}
+.page-contact .info-box .content {
+	width: 400px;
+}
+.page-contact .info-box a {
+	float: left;
+	display: block;
+	width: 140px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border: 1px #fff solid;
+}
+.page-contact .info-box .post {
+	margin-right: 10px;
+	background: #fff;
+	color: #0595c7;
+}
+.page-contact .info-box .btn {
+	color: #fff;
+}
+.page-contact .info-box .war {
+	line-height: 25px;
+	margin-top: 8px;
+	font-size: 12px;
+	color: #ccc;
+}

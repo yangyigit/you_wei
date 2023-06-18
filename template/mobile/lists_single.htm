@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css" media="screen"/>
+<script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+<script>
+function setScale() {
+    if (window.top !== window) {
+        return;
+    }
+    var pageScale = 1;
+
+    var width = document.documentElement.clientWidth || 320;
+    var height = document.documentElement.clientHeight || 486;
+
+    if (width / height >= 320 / 486) {
+        pageScale = height / 486;
+    } else {
+        pageScale = width / 320;
+    }
+    var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+    document.getElementById('viewport').setAttribute('content', content);
+}
+setScale();
+</script>
+<style>
+#nb_icon_wrap {
+	display: none !important;
+}
+</style>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body  >
+<link type="text/css" rel="stylesheet"  href="{eyou:global name='web_templets_m' /}/skin/css/swiper.min.css" />
+<link rel='stylesheet' type='text/css'  href="{eyou:global name='web_templets_m' /}/skin/css/page.css"/>
+<div class="page-header page-header-jianzhan" style="background-image: url({eyou:global name='web_templets_m' /}/skin/images/service.jpg);background-size: cover;">
+  <div class="cover"></div>
+  <div class="s">
+    <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+    <div class="line"></div>
+    <p>{$field.seo_description}</p>
+  </div>
+</div>
+<style>
+	.page-content{background:#f8f8f8;border-top:1px #eee solid;border-top:0.5px #eee solid;}
+	.page-content2{border-bottom:1px #eee solid;border-bottom:0.5px #eee solid;}
+	.page-content .s,
+	.page-content .data a{border-color: #eaeaea;}
+</style>
+<div class="page-service">
+  <div class="page-title">
+    <div class="title">网站定制</div>
+    <div class="title-line"></div>
+    <div class="tips">各类型网站定制开发建设服务</div>
+  </div>
+  <div class="wp">
+    <div class="s cl">
+      <div class="data"> <a href="javascript:">
+        <div class="title">企业网站</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gw.png" width="45" height="45"/></div>
+        <p class="des">企业门户官网/企业营销型网站定制开发、设计、建设</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">行业门户</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/hy.png" width="45" height="45"/></div>
+        <p class="des">垂直行业综合门户开发，资讯、交易、分类信息、下载等</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">购物商城</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/shop.png" width="45" height="45"/></div>
+        <p class="des">单/多用户商城、订单、支付、提现、财务管理</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">社区论坛</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/bbs.png" width="45" height="45"/></div>
+        <p class="des">会员管理及分级权限、板块分级及权限、帖子管理</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">政府官网</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png" width="45" height="45"/></div>
+        <p class="des">政府机构信息化建设，便民服务窗口，安全稳定</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">活动官网</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/action.png" width="45" height="45"/></div>
+        <p class="des">活动官方网站，信息发布、投票、报名、评比等</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">O2O系统</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/o2o.png" width="45" height="45"/></div>
+        <p class="des">商家入驻、LBS定位、商品、附近商家、购物车、会员管理</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">外贸网站</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/global.png" width="45" height="45"/></div>
+        <p class="des">企业出海必备，多语言，针对Google针对性优化</p>
+        </a> </div>
+    </div>
+  </div>
+</div>
+<div class="page-content page-content2">
+  <div class="page-service">
+    <div class="page-title">
+      <div class="title">移动端/APP开发</div>
+      <div class="title-line"></div>
+      <div class="tips">移动互联网时代，您的想法怎少得了移动端</div>
+    </div>
+    <div class="wp">
+      <div class="s cl">
+        <div class="data"> <a href="javascript:">
+          <div class="title">手机网站</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gw.png" alt="手机网站" width="45" height="45" /></div>
+          <p class="des">可以在手机浏览器、微信、独立APP等各种环境浏览的网站</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">APP开发</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/ios.png" alt="APP开发" width="45" height="45" /></div>
+          <p class="des">IOS和安卓两大主流平台的移动APP客户端开发</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">API开发</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png" alt="API开发" width="45" height="45" /></div>
+          <p class="des">APP、小程序及网站服务端开发，提供规范的API技术文档</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">H5单页</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/h5.png" alt="H5单页" width="45" height="45" /></div>
+          <p class="des">提供活动、报名、招聘等形式的H5高逼格单页开发</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-service">
+  <div class="page-title">
+    <div class="title">微信/小程序</div>
+    <div class="title-line"></div>
+    <div class="tips">基于微信，又不止于微信</div>
+  </div>
+  <div class="wp">
+    <div class="s cl">
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信官网</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gw.png" alt="微信官网" width="45" height="45" /></div>
+        <p class="des">利用微信开发能力结合原生技术开发用于微信浏览的网站</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">小程序</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/xcx.png" alt="小程序" width="45" height="45" /></div>
+        <p class="des">微信小程序免安装、易推广，拥有丰富组件及API能力</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信商城</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/shop.png" alt="微信商城" width="45" height="45" /></div>
+        <p class="des">基于微信支付、微信登录、LBS等能力的电子商务商城</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信活动</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/wx-action.png" alt="微信活动" width="45" height="45" /></div>
+        <p class="des">基于微信开放能力开发使用户更加便捷参与活动</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信报名</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/wx-bm.png" alt="微信报名" width="45" height="45" /></div>
+        <p class="des">基于微信开放能力开发方便用户快速参与报名</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信投票</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/wx-tp.png" alt="微信投票" width="45" height="45" /></div>
+        <p class="des">基于微信开放能力限制微信投票刷票等行为，更易传播</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">微信O2O</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/wx-o2o.png" alt="微信O2O" width="45" height="45" /></div>
+        <p class="des">基于微信支付、LBS、消息通知等开发能力开放本地化O2O平台</p>
+        </a> </div>
+      <div class="data"> <a href="javascript:">
+        <div class="title">更多应用</div>
+        <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/all.png" alt="更多应用" width="45" height="45" /></div>
+        <p class="des">扫码购物、微订单等更多基于微信/小程序开放能力应用</p>
+        </a> </div>
+    </div>
+  </div>
+</div>
+<div class="page-content page-content4">
+  <div class="page-service">
+    <div class="page-title">
+      <div class="title">技术支持服务</div>
+      <div class="title-line"></div>
+      <div class="tips">您所需要，而我们刚好擅长</div>
+    </div>
+    <div class="wp">
+      <div class="s cl">
+        <div class="data"> <a href="javascript:">
+          <div class="title">技术支援</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/zhiyuan.png" alt="技术支援" width="45" height="45" /></div>
+          <p class="des">遇到web开发相关的疑难杂症都可以来找我们尝试一下</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">安全防护</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/anquan.png" alt="安全防护" width="45" height="45" /></div>
+          <p class="des">修复SQL注入、XSS、逻辑缺陷等安全漏洞，API安全评估与审计</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">技术方案</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/fangan.png" alt="技术方案" width="45" height="45" /></div>
+          <p class="des">基于您的项目想法和需求，选择最适合项目的技术方案</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">数据迁移</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png" alt="数据迁移" width="45" height="45" /></div>
+          <p class="des">网站等应用程序数据迁移、数据库跨平台数据迁移等</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">服务器运维</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/data.png" alt="服务器运维" width="45" height="45" /></div>
+          <p class="des">服务器环境配置及故障修复、安全防护、日常运维及监控</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">SEO支持</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/seo.png" alt="SEO支持" width="45" height="45" /></div>
+          <p class="des">代码SEO优化建议及实施、数据自动主动提交搜索引擎工具开发</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">模板定制</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/moban.png" alt="模板定制" width="45" height="45" /></div>
+          <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序模板定制</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">插件定制</div>
+          <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/chajian.png" alt="插件定制" width="45" height="45" /></div>
+          <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序插件定制</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+{eyou:include file='down.htm'/}
+<div class="showmsg"></div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

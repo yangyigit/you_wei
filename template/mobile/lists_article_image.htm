@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css" media="screen"/>
+<script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+<script>
+function setScale() {
+    if (window.top !== window) {
+        return;
+    }
+    var pageScale = 1;
+
+    var width = document.documentElement.clientWidth || 320;
+    var height = document.documentElement.clientHeight || 486;
+
+    if (width / height >= 320 / 486) {
+        pageScale = height / 486;
+    } else {
+        pageScale = width / 320;
+    }
+    var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+    document.getElementById('viewport').setAttribute('content', content);
+}
+setScale();
+</script>
+<style>
+#nb_icon_wrap {
+	display: none !important;
+}
+</style>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+<div class="top-cat pid-cat">
+  <div class="cat-s cat_pid">
+    <ul class="cl">
+      {eyou:channel type="first" id="field" currentstyle="current-cat"}
+      <li class="cat-item {$field.currentstyle}"><a href="{$field.typeurl}" title="{$field.typename}">{$field.typename}</a> </li>
+      {/eyou:channel}
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" id="pid-cat">
+    var navleft_pid = $('.pid-cat li.current-cat').position().left + 100 - document.body.clientWidth;
+    if(navleft_pid ){
+        $('.cat_pid').scrollLeft(navleft_pid);
+    }
+</script>
+<style>
+body{ background:#f6f6f6;}
+</style>
+<div id="list"> {eyou:list pagesize='5'}
+  <div class="case-list-data"> <a href="{$field.arcurl}" title="{$field.title}" class="s">
+    <h6>{$field.title}</h6>
+    <p class="class cl"> <span class="z">所属行业:{$field.typename}</span> </p>
+    <div class="m"> <img src="{$field.litpic}"  alt="{$field.title}"> </div>
+    <p class="des">{$field.seo_description|msubstr=###,0,80/2}...</p>
+    <p class="all cl"> <span class="z">了解更多</span> <span class="y"><i class="iconfont">&#xe6a7;</i></span> </p>
+    </a> </div>
+  {/eyou:list} </div>
+<div style="height:50px;">
+  <div class='pagination'>{eyou:pagelist listitem='index,end,pre,next,pageno' listsize='1'/}</div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

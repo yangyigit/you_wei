@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css" media="screen"/>
+<script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+<script>
+function setScale() {
+    if (window.top !== window) {
+        return;
+    }
+    var pageScale = 1;
+
+    var width = document.documentElement.clientWidth || 320;
+    var height = document.documentElement.clientHeight || 486;
+
+    if (width / height >= 320 / 486) {
+        pageScale = height / 486;
+    } else {
+        pageScale = width / 320;
+    }
+    var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+    document.getElementById('viewport').setAttribute('content', content);
+}
+setScale();
+</script>
+<style>
+#nb_icon_wrap {
+	display: none !important;
+}
+</style>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body  >
+<link type="text/css" rel="stylesheet"  href="{eyou:global name='web_templets_m' /}/skin/css/swiper.min.css" />
+<link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_m' /}/skin/css/page.css'  />
+<div class="page-header page-header-jianzhan" style="background-image: url({eyou:global name='web_templets_m' /}/skin/images//service.jpg);background-size: cover;">
+  <div class="cover"></div>
+  <div class="s">
+    <h1>网站定制开发</h1>
+    <div class="line"></div>
+    <p>坚持“专业、专注、原创、效率”，高端定制开发网站</p>
+  </div>
+</div>
+<div class="page-service">
+  <div class="page-title">
+    <div class="title">服务项目</div>
+    <div class="title-line"></div>
+    <div class="tips">只为实现每一次邂逅总能超越期待</div>
+  </div>
+  <div class="wp">
+    <div class="s cl">
+      <div class="swiper-container page-service-loop swiper-container-horizontal swiper-container-android">
+        <div class="swiper-wrapper" style="transform: translate3d(-338px, 0px, 0px); transition-duration: 0ms;">
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 338px;">
+            <div class="data"> <a href="javascript:">
+              <div class="title">服务器运维</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/data.png" width="45" height="45"></div>
+              <p class="des">服务器环境配置及故障修复、安全防护、日常运维及监控</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">SEO支持</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/seo.png" width="45" height="45"></div>
+              <p class="des">代码SEO优化建议及实施、数据自动主动提交搜索引擎工具开发</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">模板定制</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/moban.png" width="45" height="45"></div>
+              <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序模板定制</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">插件定制</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/chajian.png" width="45" height="45"></div>
+              <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序插件定制</p>
+              </a> </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 338px;">
+            <div class="data"> <a href="javascript:">
+              <div class="title">技术支援</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/zhiyuan.png" width="45" height="45"></div>
+              <p class="des">遇到web开发相关的疑难杂症都可以来找我们尝试一下</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">安全防护</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/anquan.png"  width="45" height="45"></div>
+              <p class="des">修复SQL注入、XSS、逻辑缺陷等安全漏洞，API安全评估与审计</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">技术方案</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/fangan.png"  width="45" height="45"></div>
+              <p class="des">基于您的项目想法和需求，选择最适合项目的技术方案</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">数据迁移</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png"  width="45" height="45"></div>
+              <p class="des">网站等应用程序数据迁移、数据库跨平台数据迁移等</p>
+              </a> </div>
+          </div>
+          <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 338px;">
+            <div class="data"> <a href="javascript:">
+              <div class="title">服务器运维</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/data.png"  width="45" height="45"></div>
+              <p class="des">服务器环境配置及故障修复、安全防护、日常运维及监控</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">SEO支持</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/seo.png"  width="45" height="45"></div>
+              <p class="des">代码SEO优化建议及实施、数据自动主动提交搜索引擎工具开发</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">模板定制</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/moban.png"  width="45" height="45"></div>
+              <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序模板定制</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">插件定制</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/chajian.png"  width="45" height="45"></div>
+              <p class="des">Discuz、Wodrpress等第三方程序及自有JianPHP程序插件定制</p>
+              </a> </div>
+          </div>
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 338px;">
+            <div class="data"> <a href="javascript:">
+              <div class="title">技术支援</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/zhiyuan.png"  width="45" height="45"></div>
+              <p class="des">遇到web开发相关的疑难杂症都可以来找我们尝试一下</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">安全防护</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/anquan.png"  width="45" height="45"></div>
+              <p class="des">修复SQL注入、XSS、逻辑缺陷等安全漏洞，API安全评估与审计</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">技术方案</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/fangan.png"  width="45" height="45"></div>
+              <p class="des">基于您的项目想法和需求，选择最适合项目的技术方案</p>
+              </a> </div>
+            <div class="data"> <a href="javascript:">
+              <div class="title">数据迁移</div>
+              <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/gov.png"  width="45" height="45"></div>
+              <p class="des">网站等应用程序数据迁移、数据库跨平台数据迁移等</p>
+              </a> </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+{eyou:include file='down.htm'/}
+<div class="showmsg"></div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

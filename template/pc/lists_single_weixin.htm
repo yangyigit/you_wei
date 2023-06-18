@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+  <link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_pc' /}/skin/css/page.css'/>
+  <div class="page-header page-header-jianzhan" style="background: url({eyou:global name='web_templets_pc' /}/skin/images/service.jpg) no-repeat center top;">
+    <div class="s">
+      <div class="wp">
+        <div class="wps">
+          <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+          <div class="line"></div>
+          <p>{$eyou.field.seo_description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-service">
+    <div class="page-title">
+      <div class="title">{$eyou.field.typename}</div>
+      <div class="title-line"></div>
+      <div class="tips">{$eyou.field.seo_description}</div>
+    </div>
+    <div class="wp">
+      <div class="s cl">
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信官网</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/gw.png" width="45" height="45"></div>
+          <p class="des">利用微信开发能力结合原生技术开发用于微信浏览的网站</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">小程序</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/xcx.png" width="45" height="45"></div>
+          <p class="des">免安装、易推广，拥有丰富组件及API能力</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信商城</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/shop.png" width="45" height="45"></div>
+          <p class="des">基于微信支付、微信登录等能力的电子商务商城</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信活动</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/wx-action.png" width="45" height="45"></div>
+          <p class="des">基于微信开发能力使用户更加便捷参与活动</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信报名</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/wx-bm.png" width="45" height="45"></div>
+          <p class="des">基于微信开放能力方便用户快速参与报名</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信投票</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/wx-tp.png" width="45" height="45"></div>
+          <p class="des">基于微信开放能力限制微信投票刷票等行为</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">微信O2O</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/wx-o2o.png" width="45" height="45"></div>
+          <p class="des">基于微信支付、LBS的开发能力开放本地化O2O平台</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">更多应用</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/all.png" width="45" height="45"></div>
+          <p class="des">扫码购物、微订单等更多基于微信开放能力应用</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  {eyou:include file='down.htm'/}
+  <div class="showmsg"></div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

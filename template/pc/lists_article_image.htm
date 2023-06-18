@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+<div class="cat-header" style="background-image: url({eyou:global name='web_templets_pc' /}/skin/images/h-top-3.jpg);">
+  <div class="s">
+    <div class="wp">
+      <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+      <div class="line"></div>
+      <p>{$eyou.field.seo_description}</p>
+    </div>
+  </div>
+</div>
+<div class="cat-list">
+  <ul class="wp">
+    {eyou:channel type="first" id="field" currentstyle="current-cat"}
+    <li class="cat-item {$field.currentstyle}"><a href="{$field.typeurl}" >{$field.typename}</a> </li>
+    {/eyou:channel}
+  </ul>
+</div>
+<div class="in-cont wp cl">
+  <div class="caselist cl"> {eyou:list pagesize='8' mod='4'}
+    <div class="data {eyou:eq name='$mod' value='0'}no{/eyou:eq}">
+      <div class="m"> <a href="{$field.arcurl}" class="imgurl"> <img width="300" height="200" src="{$field.litpic}" class="attachment-post-thumbnail wp-post-image" alt="{$field.title}"/> </a> </div>
+      <div class="info">
+        <h2><em class="view">{$field.click}</em><a href="{$field.arcurl}" rel="bookmark">{$field.title}</a></h2>
+      </div>
+    </div>
+    {/eyou:list} </div>
+  <div class="casepage">
+    <div class='pagination'>{eyou:pagelist listitem='index,end,pre,next,pageno' listsize='1'/}</div>
+  </div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

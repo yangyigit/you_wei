@@ -1,0 +1,609 @@
+﻿
+body {
+    background: #fff;
+}
+
+/*header*/
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: none;
+    transition: 0.5s;
+}
+
+.s-header, .header:hover {
+    background: #ffffff;
+}
+
+.header .search {
+    display: none;
+}
+
+/*index-banner*/
+.index-banner {
+    min-width: 1200px;
+}
+
+.index-banner {
+    position: relative;
+}
+
+.index-banner .s {
+    padding: 230px 0 150px;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+.index-banner h2 {
+    font-size: 45px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.index-banner h2 span {
+    color: #fff;
+}
+
+.index-banner .mc {
+    color: #0595c7;
+    margin-left: 20px;
+}
+
+.index-banner h6 {
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.index-banner .index-banner-desc {
+    font-size: 40px;
+    color: #333;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0, -50%);
+}
+
+.index-slogan {
+    position: relative;
+    z-index: 100;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.index-slogan .service-subject {
+    float: left;
+    width: 23%;
+    padding: 0 1%;
+}
+
+.index-slogan .m {
+    float: left;
+    width: 50px;
+    padding: 11px 0;
+    margin-right: 12px;
+}
+
+.index-slogan .m img {
+    vertical-align: middle;
+}
+
+.index-slogan .title-sub {
+    line-height: 36px;
+    font-size: 18px;
+    color: #eee;
+}
+
+.index-slogan .des {
+    font-size: 13px;
+    color: #93979f;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+}
+
+/*index-title*/
+.index-title {
+    text-align: center;
+}
+
+.index-title .title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #333;
+}
+
+.index-title .tips {
+    font-size: 15px;
+    line-height: 15px;
+    color: #888;
+}
+
+.index-title .title-line {
+    height: 20px;
+}
+
+/*index-service*/
+.index-service {
+    padding: 100px 0;
+    zoom: 1;
+    min-width: 1200px;
+}
+
+.index-service .s {
+    padding-top: 50px;
+}
+
+.index-service .sub {
+    float: left;
+    width: 25%;
+    height: 220px;
+    background: #fff;
+    position: relative;
+    transition: 0.3;
+}
+
+.index-service dl {
+    padding: 15px;
+}
+
+.index-service dt {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.index-service dt {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.index-service .des {
+    height: 40px;
+    line-height: 20px;
+    padding: 0 15px;
+    overflow: hidden;
+    font-size: 13px;
+    color: #646A75;
+    text-align: center;
+}
+
+.index-service .m {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.index-service .m img {
+    height: 80px;
+}
+
+.index-service ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #325efb;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.index-service .ul-s {
+    padding: 15px;
+}
+
+.index-service ul h6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.index-service ul li {
+    font-size: 13px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.index-service .index2n {
+    margin-top: 40px;
+    height: 36px;
+}
+
+.index-service .index2n a {
+    color: #fff;
+    padding: 6px 25px;
+    line-height: 36px;
+    border-radius: 1px;
+    border: 1px #FFF solid;
+}
+
+.index-service .index2n a:hover span {
+    color: #0595c7;
+}
+
+/*index-case*/
+.index-case {
+    height: 520px;
+    width: 100%;
+    position: relative;
+}
+
+.index-case-title-box {
+    width: 240px;
+    position: absolute;
+    padding-bottom: 30px;
+    top: 60px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 10;
+}
+
+.index-case-title-a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    cursor: pointer;
+    background-color: #343b4d;
+    font-size: 14px;
+}
+
+.index-case-title-icon {
+    width: 12px;
+    height: 5px;
+    background-color: #fff;
+    vertical-align: middle;
+    color: #fff;
+    display: inline-block;
+}
+
+.index-case-title {
+    vertical-align: middle;
+    color: #fff;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.index-case-content-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #333;
+}
+
+.index-case-content-bg {
+    position: absolute;
+    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_connect.7962262.jpg) center center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+    opacity: 1;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.index-case-content {
+    padding: 100px 160px 0 380px;
+    color: #fff;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.index-case-content-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.index-case-content-desc {
+    margin: 32px 0;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #fff;
+    height: 110px;
+}
+
+.index-case-content-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #375efb;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.index-case-content-btn > span {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+
+/*index-customer*/
+.index-customer {
+    min-width: 1200px;
+    padding: 80px 0;
+    background: #fff;
+}
+
+.customer-box {
+    padding: 50px 150px 30px;
+}
+
+.customer-box .m {
+    float: left;
+    width: 130px;
+    margin-right: 20px;
+}
+
+.customer-box .m img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.customer-box .big-title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.customer-box p {
+    padding: 15px 0 10px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #777;
+    max-height: 66px;
+    overflow: hidden;
+}
+
+.customer-box .s-title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.customer-box .hd {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.customer-box .hd li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: 1px #0590c7 solid;
+    border-radius: 50%;
+}
+
+.customer-box .hd .on {
+    background: #0595c7;
+}
+
+/*index-news*/
+.index-news {
+    min-width: 1200px;
+    padding: 80px 0;
+    background: #f8f8f8 url(../images/brand_bg.png) no-repeat center;
+    border: 1px #f0f0f0 solid;
+    border-width: 1px 0;
+}
+
+.index-news .s {
+    padding-top: 40px;
+}
+
+.index-news .news-list {
+    float: left;
+    width: 400px;
+}
+
+.index-news .list-s {
+    margin: 0 15px;
+    background: #fff;
+    border: 1px #f2f2f2 solid;
+}
+
+.index-news .m {
+    position: relative;
+}
+
+.index-news .m p {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #eee;
+}
+
+.index-news .m img {
+    width: 100%;
+    height: 120px;
+}
+
+.index-news ul {
+    padding: 10px 15px;
+}
+
+.index-news li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 13px;
+    padding-left: 10px;
+    background: url(../images/lidot.gif) no-repeat left center;
+}
+
+.index-news li span {
+    float: right;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+/*index-partner*/
+.index-partner {
+    min-width: 1200px;
+    padding: 100px 0;
+    background: #fff;
+}
+
+.index-partner .s {
+    padding: 50px 0 0;
+}
+
+.index-partner ul {
+    padding: 0 10px;
+}
+
+.index-partner li {
+    float: left;
+    width: 20%;
+}
+
+.index-partner a {
+    display: block;
+    margin: 10px;
+    height: 80px;
+    border: 1px #ededed solid;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    transition: 0.5s;
+}
+
+.index-partner a:hover {
+    border-color: #dcdcdc;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+    filter: none;
+}
+
+/*index-contact*/
+.index-contact {
+    min-width: 1200px;
+    padding: 45px 0;
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    position: relative;
+}
+
+.index-contact .cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.index-contact .s {
+    position: relative;
+    padding: 0 120px;
+    z-index: 100;
+}
+
+.index-contact h6 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.index-contact p {
+    line-height: 50px;
+    font-size: 18px;
+    color: #eee;
+}
+
+.index-contact .btn {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    display: block;
+    width: 200px;
+    margin-top: -25px;
+    border: 1px #fff solid;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.index-contact .btn a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*index-process*/
+.index-process {
+    min-width: 1200px;
+    background: #fff;
+    padding: 80px 0;
+}
+
+.index-process ul {
+    padding: 40px 40px 0;
+}
+
+.index-process li {
+    float: left;
+    width: 12.5%;
+}
+
+.index-process li a {
+    display: block;
+    border-left: 1px #ddd dotted;
+    text-align: center;
+    color: #808080;
+}
+
+.index-process .no a {
+    border-left: 0;
+}
+
+.index-process li p {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.index-process li img {
+    height: 50px;
+}

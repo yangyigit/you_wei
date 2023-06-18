@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}"/>
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}"/>
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+  <link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_pc' /}/skin/css/page.css'/>
+  <div class="page-header page-header-about" style="background: url({eyou:global name='web_templets_pc' /}/skin/images/about.jpg) no-repeat center top;">
+    <div class="s">
+      <div class="wp">
+        <div class="wps">
+          <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+          <div class="line"></div>
+          <p>{$eyou.field.seo_description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+	.about-section{padding: 60px 0;}
+	.about-section .title{ height: 40px; line-height: 40px; margin-bottom: 30px; text-align: center; font-size: 26px;}
+	.about-us .s{ background:#f6f7fc;}
+	.about-us .m{width: 500px;}
+	.about-us .m img{width: 100%; height: 280px;}
+	.about-us .des{ width: 636px; padding: 20px;}
+	.about-us .des p{font-size:14px; line-height: 24px; margin-bottom: 15px; color:#777;}
+	.about-us .line{ margin-top: 20px; height:2px; width: 80px; background: #0595c7;}
+	.about-team{min-width: 1200px;background: #f6f7fc;}
+	.about-team p{padding: 0 80px;  font-size: 14px; line-height: 25px;color:#777;}
+	.about-result{min-width: 1200px;}
+	.about-result p{padding: 0 80px;  font-size: 14px; line-height: 25px;color:#777;}
+	.about-future{min-width: 1200px;background: #f6f7fc;}
+	.about-future p{padding: 0 80px;  font-size: 14px; line-height: 25px;color:#777;}
+</style>
+  <div class="about-us about-section">
+    <div class="title wp">{$eyou.field.typename}</div>
+    <div class="about-team about-section">
+      <div class="wp">
+        <div class="s wps">
+          <p>{$eyou.field.content}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-contact">
+    <div class="wp">
+      <div class="s">
+        <div class="your-ask">
+          <h6>我猜您现在可能存在如下疑问：</h6>
+          <ul class="cl">
+            <li>你们能做什么？</li>
+            <li>需要多少钱？</li>
+            <li>需要多久？</li>
+            <li>我需要做什么?</li>
+            <li>需要提供什么资料？</li>
+            <li>售后服务怎么样？</li>
+          </ul>
+        </div>
+        <div class="info-box"> {eyou:guestbookform type='default' typeid='33'}
+          <form action="{$field.action}" enctype="multipart/form-data" method="post">
+            <input type="text"  name="{$field.attr_5}" value="" placeholder="{$field.itemname_5}" class="username"/>
+            <input type="text"  name="{$field.attr_6}" value="" placeholder="{$field.itemname_6}" class="telephone"/>
+            <input type="text"  name="{$field.attr_7}" value="" placeholder="您的问题或者需求~" class="content"/>
+            <a class="post">
+            <button type="submit" class="post">提交您的需求</button>
+            </a> <a href="https://wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" class="btn">点击在线咨询</a> {$field.hidden}
+          </form>
+          {/eyou:guestbookform}
+          <p class="war">同样的问题每个人侧重点不同，很难有标准的答案；请认真填写表单信息或直接在线联系，我们会给您最合适的答案！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="showmsg"></div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.seo_title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+  <link rel='stylesheet' type='text/css'  href='{eyou:global name='web_templets_pc' /}/skin/css/page.css'/>
+  <div class="page-header page-header-jianzhan" style="background: url({eyou:global name='web_templets_pc' /}/skin/images/service.jpg) no-repeat center top;">
+    <div class="s">
+      <div class="wp">
+        <div class="wps">
+          <h1>{$eyou.field.typeid|gettoptype=###,'typename'}</h1>
+          <div class="line"></div>
+          <p>{$eyou.field.seo_description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-service">
+    <div class="page-title">
+      <div class="title">{$eyou.field.typename}</div>
+      <div class="title-line"></div>
+      <div class="tips">{$eyou.field.seo_description}</div>
+    </div>
+    <div class="wp">
+      <div class="s cl">
+        <div class="data"> <a href="javascript:">
+          <div class="title">企业网站</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/gw.png" width="45" height="45" /></div>
+          <p class="des">企业门户官网/企业营销型网站定制开发、设计、建设</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">行业门户</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/hy.png" width="45" height="45" /></div>
+          <p class="des">垂直行业综合门户开发，资讯、交易、分类信息、下载等</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">购物商城</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/shop.png" width="45" height="45" /></div>
+          <p class="des">单/多用户商城、订单、支付、提现、财务管理</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">社区论坛</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/bbs.png" width="45" height="45" /></div>
+          <p class="des">会员管理及分级权限、板块分级及权限、帖子管理</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">政府官网</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/gov.png" width="45" height="45" /></div>
+          <p class="des">政府机构信息化建设，便民服务窗口，安全稳定</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">活动官网</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/action.png" width="45" height="45" /></div>
+          <p class="des">活动官方网站，信息发布、投票、报名、评比等</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">O2O系统</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/o2o.png" width="45" height="45" /></div>
+          <p class="des">商家入驻、LBS定位、商品、附近商家、购物车、会员管理</p>
+          </a> </div>
+        <div class="data"> <a href="javascript:">
+          <div class="title">外贸网站</div>
+          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/global.png" width="45" height="45" /></div>
+          <p class="des">企业出海必备，多语言，针对Google针对性优化</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  {eyou:include file='down.htm'/}
+  <div class="showmsg"></div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

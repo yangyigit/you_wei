@@ -1,0 +1,23 @@
+<div  class="header">
+  <div class="wp">
+    <div class="wps cl">
+      <h1>
+        <a href="{eyou:global name='web_basehost' /}" rel="home">
+          {if condition="$web_logo neq ''"}
+           <img src="{eyou:global name='web_logo' /}" alt="{eyou:global name='web_name' /}"  height="60"/>
+          {else /} {eyou:global name='web_name' /}
+          {/if}
+        </a>
+      </h1>
+      <div class="header-tel y"> <span>{eyou:global name='web_attr_1' /}</span> </div>
+      <div class="nav">
+        <ul id="menu-csweigounv" class="cl">
+          <li><a href="{eyou:global name='web_basehost' /}">首页</a></li>
+          {eyou:channel type="top" id="field" row='5' currentstyle="active"}
+          <li><a href="{$field.typeurl}">{$field.typename}</a></li>
+          {/eyou:channel}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{$eyou.field.title}_{eyou:global name='web_name' /}</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css" media="screen" />
+<script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_templets_m' /}/skin/css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/prettify.js"></script>
+<script>
+function setScale() {
+    if (window.top !== window) {
+        return;
+    }
+    var pageScale = 1;
+
+    var width = document.documentElement.clientWidth || 320;
+    var height = document.documentElement.clientHeight || 486;
+
+    if (width / height >= 320 / 486) {
+        pageScale = height / 486;
+    } else {
+        pageScale = width / 320;
+    }
+    var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+    document.getElementById('viewport').setAttribute('content', content);
+}
+setScale();
+</script>
+<style>
+#nb_icon_wrap {
+	display: none !important;
+}
+</style>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body  onload="prettyPrint()">
+<div class="post-view">
+  <div  class="case-view-title">
+    <div class="post-cover"> <img src="{$eyou.field.litpic}"/> </div>
+    <div class="bg-cover"></div>
+    <div class="info">
+      <h1>{$eyou.field.title}</h1>
+    </div>
+  </div>
+  <div class="view-content" style="padding-top:6px;">
+    <div class="s"> {$eyou.field.content} </div>
+    <style>
+	.view-qrocde{ margin: 10px auto ;padding: 12px 0;border:1px #ededed solid; border-width: 1px 0;border-width: 0.5px 0; }
+	.view-qrocde .m{ width: 90px; margin-right: 10px;}
+	.view-qrocde .m img{ width: 100%; height: 90px; vertical-align: middle;}
+	.view-qrocde h6{ height: 30px; line-height:30px; font-weight: normal; font-size: 16px;}
+	.view-qrocde p{line-height:20px; overflow: hidden; font-size: 14px; color: #aaa;}
+</style>
+    <div class="view-qrocde cl">
+      <div class="m z"><img src="{eyou:global name='web_attr_6' /}" width="150" height="150"/></div>
+      <div class="text">
+        <h6>微信与项目经理沟通</h6>
+        <p>解答本文疑问/技术咨询/运营咨询/技术建议/互联网交流</p>
+      </div>
+    </div>
+    <div class="post-data"> <span class="reads">阅读 {eyou:arcclick /}</span> </div>
+    <div class="relatedposts">
+      <h3><span>相关推荐</span></h3>
+      <ul>
+        {eyou:arclist row='5' titlelen='20' orderby='add_time'}
+        <li><a href="{$field.arcurl}" rel="bookmark" title="{$field.title}">{$field.title}</a></li>
+        {/eyou:arclist}
+      </ul>
+    </div>
+  </div>
+</div>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

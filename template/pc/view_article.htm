@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<title>{$eyou.field.title}_{eyou:global name='web_name' /}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description|html_msubstr=###}" />
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+<link  href="{eyou:global name='web_templets_pc' /}/skin/css/prettify.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="main">
+<div class="in-cont  w1200 cl">
+  <div class="mn">
+    <div class="article">
+      <h1>{$eyou.field.title}</h1>
+      <div class="info"> <em>{$eyou.field.add_time|MyDate='Y-m-d H:i',###} </em> <em>栏目：{eyou:type} <a href="{$field.typeurl}" title="{$field.typename}" rel="category tag">{$field.typename}</a>{/eyou:type} </em> <em>查看({eyou:arcclick /})</em> <em></em> </div>
+      <div class="cont"> {$eyou.field.content} </div>
+      <style>
+	.view-qrocde{ width:450px; margin: 20px auto ;padding: 15px;border:1px #eee solid; border-width: 1px 0; }
+	.view-qrocde .m{ width: 100px; margin-right: 15px;}
+	.view-qrocde .m img{ width: 100%; height: 100px; vertical-align: middle;}
+	.view-qrocde h6{ height: 30px; line-height: 30px; font-weight: normal; font-size: 16px;}
+	.view-qrocde p{height:25px; line-height: 25px; overflow: hidden; font-size: 13px; color: #999;}
+</style>
+      <div class="view-qrocde cl">
+        <div class="m z"><img src="{eyou:global name='web_attr_6' /}"/></div>
+        <div class="text">
+          <h6>扫二维码与项目经理沟通</h6>
+          <p>我们在微信上24小时期待你的声音</p>
+          <p>解答本文疑问/技术咨询/运营咨询/技术建议/互联网交流</p>
+        </div>
+      </div>
+      <div class="copy">郑重申明：某某网络以外的任何单位或个人，不得使用该案例作为工作成功展示！</div>
+      <div class="relatedposts">
+        <h3><span>相关推荐</span></h3>
+        <ul class="cl">
+          {eyou:arclist row='10' titlelen='20' orderby='add_time'}
+          <li><a href="{$field.arcurl}" rel="bookmark" title="{$field.title}">{$field.title}</a></li>
+          {/eyou:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- #mn -->
+  <div class="sidebar">
+    <div class="tuijian"> {eyou:arclist row='1' titlelen='20' orderby='add_time'} <a href="{$field.arcurl}">
+      <h2 class="cl"><span>{$field.typename}</span></h2>
+      <h3>{$field.title}</h3>
+      <p>{$field.seo_description|msubstr=###,0,200/2}...</p>
+      </a> {/eyou:arclist} </div>
+    {eyou:channelartlist typeid='10'}
+    <div class="ser sidesub">
+      <h2>{eyou:field name='typename' /}</h2>
+      <ul class="ebox">
+        {eyou:channel type='son'}
+        <li class="sub sub-{$i}">
+          <div>
+            <h3>{$field.typename}</h3>
+            <p>{$field.seo_description}</p>
+            <a class="btn" href="{$field.typeurl}">查看详情</a> </div>
+        </li>
+        {/eyou:channel}
+        <li class="sub sub-5">
+          <div>
+            <h3>更多服务项目</h3>
+            <p> <a>{eyou:field name='seo_description' /}</a></p>
+            <a class="btn"  href="{eyou:field name='typeurl' /}">获取更多</a> </div>
+        </li>
+      </ul>
+    </div>
+    {/eyou:channelartlist}
+    <div class="contact" id="fix">
+      <h2 class="cl"> <span>联系吧</span> <a href="https://map.baidu.com/" class="ditu" rel="nofollow" target="_blank">在百度地图上找到我们</a> </h2>
+      <h3>电话：{eyou:global name='web_attr_1' /}</h3>
+      <p>如遇占线或暂未接听请拨：{eyou:global name='web_attr_2' /}</p>
+      <div class="qq"> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow" target="_blank">业务咨询</a> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow" target="_blank">技术咨询</a> <a href="//wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" rel="nofollow"  target="_blank">售后服务</a> </div>
+    </div>
+  </div>
+  <script>
+//固定滚动
+(function(){
+var oDiv=document.getElementById("fix");
+var H=120,iE6;
+var Y=oDiv;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+iE6=window.ActiveXObject&&!window.XMLHttpRequest;
+if(!iE6){
+window.onscroll=function()
+{
+var s=document.body.scrollTop||document.documentElement.scrollTop;
+if(s>H){oDiv.className="contact  fixed";if(iE6){oDiv.style.top=(s-H)+"px";}}
+else{oDiv.className="contact ";}	
+};
+}
+
+})();
+</script></div>
+{eyou:include file='footer.htm'/} 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/prettify.js"></script>
+</body>
+</html>

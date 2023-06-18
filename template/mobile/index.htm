@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{eyou:global name='web_name' /}移动版</title>
+    <meta name="description" content="{eyou:global name='web_description' /}"/>
+    <meta name="keywords" content="{eyou:global name='web_keywords' /}"/>
+    <meta name="viewport" id="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/common.css"
+          media="screen"/>
+    <script src="{eyou:global name='web_templets_m' /}/skin/js/jquery.min.js"></script>
+    <script>
+        function setScale() {
+            if (window.top !== window) {
+                return;
+            }
+            var pageScale = 1;
+
+            var width = document.documentElement.clientWidth || 320;
+            var height = document.documentElement.clientHeight || 486;
+
+            if (width / height >= 320 / 486) {
+                pageScale = height / 486;
+            } else {
+                pageScale = width / 320;
+            }
+            var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+            document.getElementById('viewport').setAttribute('content', content);
+        }
+
+        setScale();
+    </script>
+    <style>
+        #nb_icon_wrap {
+            display: none !important;
+        }
+    </style>
+    <link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon"/>
+</head>
+<body>
+<link href="{eyou:global name='web_templets_m' /}/skin/css/swiper.min.css" type="text/css" rel="stylesheet"/>
+<div class="header-index cl">
+    <h1>
+        {if condition="$web_logo neq ''"}
+        <img src="{eyou:global name='web_logo' /}" alt="{eyou:global name='web_name' /}" height="60"/>
+        {else /} {eyou:global name='web_name' /}
+        {/if}
+    </h1>
+</div>
+<div class="swiper-container index-banner">
+    <div class="swiper-wrapper"> {eyou:adv pid='1'}
+        <div class="swiper-slide"><a><img src="{$field.litpic}" alt="{$field.title}"/></a></div>
+        {/eyou:adv}
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+{eyou:channelartlist typeid='10'}
+<div class="index-service index-f">
+    <div class="index-title">{eyou:field name='typename' /}</div>
+    <div class="index-title-sub">{eyou:field name='seo_description' /}</div>
+    <div class="s cl"> {eyou:channel type='son'}
+        <dl class="data">
+            <a href="{$field.typeurl}">
+                <dt>{$field.typename}</dt>
+                <dd class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/pc{$i}.png"
+                                   alt="{$field.title}"/></dd>
+                <dd class="des">{$field.seo_description}</dd>
+            </a>
+        </dl>
+        {/eyou:channel}
+    </div>
+</div>
+{/eyou:channelartlist}
+{eyou:channelartlist typeid='5'}
+<div class="index-case index-f">
+    <div class="index-title">{eyou:field name='typename' /}</div>
+    <div class="index-title-sub">{eyou:field name='seo_description' /}</div>
+    <div class="s cl">
+        <div class="swiper-container index-case-loop">
+            <div class="swiper-wrapper"> {eyou:arclist row='5' titlelen='20' orderby='add_time'}
+                <div class="swiper-slide"><a href="{$field.arcurl}">
+                    <div class="m"><img src="{$field.litpic}" alt="{$field.title}"/></div>
+                    <p class="cl"><em>{$field.click}次浏览</em><span>{$field.title}</span></p>
+                </a></div>
+                {/eyou:arclist}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="line"></div>
+        <div class="index-btn">
+            <p>用技术与专注，将作品通过艺术和技术的结合，打造精品案例</p>
+            <a href="{eyou:field name='typeurl' /}">更多案例</a></div>
+    </div>
+</div>
+{/eyou:channelartlist}
+<div class="index-customer index-f"> {eyou:type typeid='29'}
+    <div class="index-title">{$field.typename}</div>
+    <div class="index-title-sub">{$field.seo_description}</div>
+    {/eyou:type}
+    <div class="s cl">
+        <div class="swiper-container index-case-loop">
+            <div class="swiper-wrapper"> {eyou:arclist typeid='29' row='5' titlelen='20' orderby='add_time'}
+                <div class="swiper-slide">
+                    <div class="index-custimer-title">
+                        <div class="m"><img src="{$field.litpic}" alt="{$field.title}"/></div>
+                        <div class="big-title">{$field.title}</div>
+                        <div class="s-title">{$field.subtitle}</div>
+                    </div>
+                    <p>{$field.seo_description|msubstr=###,0,300/2}...</p>
+                </div>
+                {/eyou:arclist}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<div class="index-news index-f"> {eyou:type typeid='11'}
+    <div class="index-title">{$field.typename}</div>
+    <div class="index-title-sub">{$field.seo_description}</div>
+    {/eyou:type}
+    <div class="s cl">
+        <div class="swiper-container index-news-loop">
+            <div class="swiper-wrapper"> {eyou:channelartlist type="son" typeid='11' row='3'}
+                <div class="swiper-slide">
+                    <div class="m"><img src="{eyou:global name='web_templets_m' /}/skin/images/index-list{$i}.jpg"
+                                        alt="{eyou:field name='typename' /}"/>
+                        <p>{eyou:field name='typename' /}</p>
+                    </div>
+                    <ul>
+                        {eyou:arclist row='8' titlelen='20' orderby='add_time'}
+                        <li class='cl'><a href='{$field.arcurl}' title='{$field.title}'><span>{$field.add_time|MyDate='m-d',###}</span>{$field.title}</a>
+                        </li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+                {/eyou:channelartlist}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<div class="index-partner index-f"> {eyou:type typeid='4'}
+    <div class="index-title">{$field.typename}</div>
+    <div class="index-title-sub">{$field.seo_description}</div>
+    {/eyou:type}
+    <div class="s cl">
+        <div class="swiper-container index-partner-loop">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="cl">
+                        {eyou:arclist typeid='4' limit='0,8' titlelen='20' orderby='add_time'}
+                        <li><a href="JavaScript:"><img src="{$field.litpic}"/></a></li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="cl">
+                        {eyou:arclist typeid='4' limit='8,16' titlelen='20' orderby='add_time'}
+                        <li><a href="JavaScript:"><img src="{$field.litpic}"/></a></li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="cl">
+                        {eyou:arclist typeid='4' limit='16,24' titlelen='20' orderby='add_time'}
+                        <li><a href="JavaScript:"><img src="{$field.litpic}"/></a></li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<div class="page-contact">
+    <div class="wp">
+        <div class="s">
+            <div class="your-ask">
+                <h6>我猜您现在可能存在如下疑问：</h6>
+                <ul class="cl">
+                    <li>你们能做什么？</li>
+                    <li>需要多少钱？</li>
+                    <li>需要多久？</li>
+                    <li>我需要做什么?</li>
+                    <li>需要提供什么资料？</li>
+                    <li>售后服务怎么样？</li>
+                </ul>
+            </div>
+            <div class="info-box"> {eyou:guestbookform type='default' typeid="33"}
+                <form class="info-form" action="{$field.action}" enctype="multipart/form-data" method="post">
+                    <input type="text" name="{$field.attr_5}" value="" placeholder="{$field.itemname_5}"
+                           class="username form-control"/>
+                    <input type="text" name="{$field.attr_6}" value="" placeholder="{$field.itemname_6}"
+                           class="telephone form-control"/>
+                    <textarea name="{$field.attr_7}" value="" placeholder="您的问题或者需求~" rows="4"
+                              class="content form-control"></textarea>
+                    <div class="btn-g cl"><a class="post z">
+                        <button type="submit" class="post z"
+                                style="border:none;padding-top:7px;padding-left:25px;font-size:14px;outline:none;">
+                            提交您的需求
+                        </button>
+                    </a> <a href="tel:{eyou:global name='web_attr_1' /}" class="btn y">拨打客服电话</a></div>
+                    {$field.hidden}
+                </form>
+                {/eyou:guestbookform}
+                <p class="war">*同样的问题每个人侧重点不同，很难有标准的答案；请认真填写表单信息或直接在线联系，我们会给您最合适的答案！</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="showmsg"></div>
+<script src="{eyou:global name='web_templets_m' /}/skin/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.index-banner', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper = new Swiper('.index-case-loop', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper = new Swiper('.index-news-loop', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper = new Swiper('.index-partner-loop', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+{eyou:include file='footer.htm'/}
+</body>
+</html>

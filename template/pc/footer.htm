@@ -1,0 +1,70 @@
+<div class="footer">
+  <div class="wp">
+    <div class="wps cl"> {eyou:channelartlist typeid='11'}
+      <dl class="about">
+        <dt>{eyou:field name='typename' /}</dt>
+        {eyou:channel type='son' row='6'}
+        <dd><a href="{$field.typeurl}"  title="{$field.typename}" >{$field.typename}</a></dd>
+        {/eyou:channel}
+      </dl>
+      {/eyou:channelartlist} 
+      {eyou:channelartlist typeid='5'}
+      <dl class="solution">
+        <dt>{eyou:field name='typename' /}</dt>
+        {eyou:channel type='son' row='6'}
+        <dd><a href="{$field.typeurl}"  title="{$field.typename}" >{$field.typename}</a></dd>
+        {/eyou:channel}
+      </dl>
+      {/eyou:channelartlist}
+      <dl class="contact">
+        <dt>联系我们</dt>
+        <dd>电话：{eyou:global name='web_attr_1' /}</dd>
+        <dd>邮箱：{eyou:global name='web_attr_4' /}</dd>
+        <dd>地址：{eyou:global name='web_attr_3' /}</dd>
+        <dd>手机：{eyou:global name='web_attr_2' /}</dd>
+      </dl>
+      <dl class="flow">
+        <dt></dt>
+        <div class="ma cl">
+          <div class="m"> <img src="{eyou:global name='web_attr_6' /}"/>
+            <p>微信二维码</p>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="footer-link wp">
+    <ul class="wps cl">
+      <li class="fisrt">友情链接</li>
+      {eyou:flink titlelen='20' row='20' type='text'}
+      <li> <a href="{$field.url}" target="_blank">{$field.title}</a> </li>
+      {/eyou:flink}
+    </ul>
+  </div>
+</div>
+<div  class="bot-footer" >
+  <div class="wp">
+    <p class="wps"> <em>{eyou:global name='web_copyright' /}</em> <em>备案号：{eyou:global name='web_recordnum' /}</em> <em></p>
+  </div>
+</div>
+<div class="footer-kefu">
+  <ul>
+    <li class="qq"><a href="https://wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes"><em></em>在线咨询</a></li>
+    <li class="tel"><a href="JavaScript:"><em></em>{eyou:global name='web_attr_1' /}</a></li>
+    <li class="wx"> <em></em>
+      <div class="code"> <img src="{eyou:global name='web_attr_6' /}"/>
+        <p>微信二维码</p>
+      </div>
+    </li>
+    <li class="m"> <em></em>
+      <div class="code"> <img src="{eyou:global name='web_attr_6' /}"/>
+        <p>移动版官网</p>
+      </div>
+    </li>
+    <li class="top"><em></em></li>
+  </ul>
+</div>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/all.js"></script> 
+<!-- 应用插件标签 start --> 
+{eyou:weapp type='default' /} 
+<!-- 应用插件标签 end -->
