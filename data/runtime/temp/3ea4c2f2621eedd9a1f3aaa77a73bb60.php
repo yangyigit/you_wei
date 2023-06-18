@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:31:"./template/pc/lists_article.htm";i:1654564398;s:52:"/Users/hengji/开发/yangyidemo/template/pc/head.htm";i:1686991424;s:54:"/Users/hengji/开发/yangyidemo/template/pc/footer.htm";i:1654564300;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:31:"./template/pc/lists_article.htm";i:1654564398;s:52:"/Users/hengji/开发/yangyidemo/template/pc/head.htm";i:1686991424;s:54:"/Users/hengji/开发/yangyidemo/template/pc/footer.htm";i:1687059629;}*/ ?>
 <!DOCTYPE html>
 
 <head>
@@ -184,11 +184,6 @@ else{oDiv.className="contact ";}
     <li class="wx"> <em></em>
       <div class="code"> <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_attr_6"); echo $__VALUE__; ?>"/>
         <p>微信二维码</p>
-      </div>
-    </li>
-    <li class="m"> <em></em>
-      <div class="code"> <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_attr_6"); echo $__VALUE__; ?>"/>
-        <p>移动版官网</p>
       </div>
     </li>
     <li class="top"><em></em></li>
