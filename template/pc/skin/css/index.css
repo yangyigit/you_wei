@@ -284,7 +284,6 @@ body {
 
 .index-case-content-bg {
     position: absolute;
-    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_connect.7962262.jpg) center center / cover no-repeat;
     width: 100%;
     height: 100%;
     display: block;
@@ -292,6 +291,18 @@ body {
     opacity: 1;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+}
+
+.bg-1 {
+    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_connect.7962262.jpg) center center / cover no-repeat;
+}
+
+.bg-2 {
+    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_api.9095cbb.jpg) center center / cover no-repeat;
+}
+
+.bg-3 {
+    background: url(https://ec.iot.10086.cn/ecology/static/img/home_plat_back_international.3ca56f4.jpg) center center / cover no-repeat;
 }
 
 .index-case-content {
@@ -332,6 +343,9 @@ body {
     margin-left: 12px;
 }
 
+.index-case-title-a:hover {
+    background-color: #2a3141;
+}
 
 /*index-customer*/
 .index-customer {
@@ -351,9 +365,8 @@ body {
 }
 
 .customer-box .m img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 .customer-box .big-title {

@@ -1,266 +1,301 @@
 <!DOCTYPE html>
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Cache-control" content="no-cache">
-<meta name="format-detection" content="telephone=no">
-<meta name="renderer" content="webkit">
-<title>{eyou:global name='web_name' /}</title>
-<meta name="description" content="{eyou:global name='web_description' /}" />
-<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
-  <link href="{eyou:global name='web_templets_pc' /}/skin/css/swiper.min.css" type="text/css" rel="stylesheet"/>
-<link  href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
-<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <title>{eyou:global name='web_name' /}</title>
+    <meta name="description" content="{eyou:global name='web_description' /}"/>
+    <meta name="keywords" content="{eyou:global name='web_keywords' /}"/>
+    <link href="{eyou:global name='web_templets_pc' /}/skin/css/swiper.min.css" type="text/css" rel="stylesheet"/>
+    <link href="{eyou:global name='web_templets_pc' /}/skin/css/common.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+    <link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon"/>
 </head>
 <body>
 {eyou:include file='head.htm'/}
 <div class="main">
-  <link type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/index.css" rel="stylesheet">
+    <link type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/index.css" rel="stylesheet">
     <div class="swiper-container index-banner">
-          <div class="swiper-wrapper"> {eyou:adv pid='2'}
-              <div class="swiper-slide">
-                  <div class="index-banner-desc">
-                 {$field.intro}
-                  </div>
-                  <img src="{$field.litpic}" alt="{$field.title}"/>
-              </div>
-              {/eyou:adv}
-          </div>
-          <div class="swiper-pagination"></div>
-  </div>
-  <div class="index-service "> {eyou:type typeid='10'}
-    <div class="index-title">
-      <div class="title">产品展示</div>
-      <div class="title-line"></div>
-      <p class="tips">{$field.seo_description}</p>
-    </div>
-    {/eyou:type}
-  <div class="wp ">
-      <div class="s wps cl">
-        {eyou:type typeid='25'}
-        <div class="sub">
-          <dl>
-            <dt>{$field.typename}</dt>
-            <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc1.png" width="80" height="80" alt="{$field.typename}"/></dd>
-            <dd class="des">{$field.seo_description}</dd>
-          </dl>
-          </dl>
-          <ul class="on">
-            <div class="ul-s">
-              <h6>无线无源温度传感器</h6>
-              <li>{$field.seo_description}</li>
-              <div class="index2n"><a href="{$field.typeurl}"  class="btn-a"><em></em><span>查看详情</span></a></div>
+        <div class="swiper-wrapper"> {eyou:adv pid='2'}
+            <div class="swiper-slide">
+                <div class="index-banner-desc">
+                    {$field.intro}
+                </div>
+                <img src="{$field.litpic}" alt="{$field.title}"/>
             </div>
-          </ul>
+            {/eyou:adv}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="index-service "> {eyou:type typeid='10'}
+        <div class="index-title">
+            <div class="title">产品展示</div>
+            <div class="title-line"></div>
+            <p class="tips">{$field.seo_description}</p>
         </div>
         {/eyou:type}
-        {eyou:type typeid='26'}
-        <div class="sub">
-          <dl>
-            <dt>{$field.typename}</dt>
-            <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc2.png" width="80" height="80" alt="{$field.typename}"/></dd>
-            <dd class="des">{$field.seo_description}</dd>
-          </dl>
-          </dl>
-          <ul class="on">
-            <div class="ul-s">
-              <h6>多点红外测温传感器</h6>
-              <li>{$field.seo_description}</li>
-              <div class="index2n"><a href="{$field.typeurl}"  class="btn-a"><em></em><span>查看详情</span></a></div>
+        <div class="wp ">
+            <div class="s wps cl">
+                {eyou:type typeid='25'}
+                <div class="sub">
+                    <dl>
+                        <dt>{$field.typename}</dt>
+                        <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc1.png" width="80"
+                                           height="80" alt="{$field.typename}"/></dd>
+                        <dd class="des">{$field.seo_description}</dd>
+                    </dl>
+                    </dl>
+                    <ul class="on">
+                        <div class="ul-s">
+                            <h6>无线无源温度传感器</h6>
+                            <li>{$field.seo_description}</li>
+                            <div class="index2n"><a href="{$field.typeurl}" class="btn-a"><em></em><span>查看详情</span></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                {/eyou:type}
+                {eyou:type typeid='26'}
+                <div class="sub">
+                    <dl>
+                        <dt>{$field.typename}</dt>
+                        <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc2.png" width="80"
+                                           height="80" alt="{$field.typename}"/></dd>
+                        <dd class="des">{$field.seo_description}</dd>
+                    </dl>
+                    </dl>
+                    <ul class="on">
+                        <div class="ul-s">
+                            <h6>多点红外测温传感器</h6>
+                            <li>{$field.seo_description}</li>
+                            <div class="index2n"><a href="{$field.typeurl}" class="btn-a"><em></em><span>查看详情</span></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                {/eyou:type}
+                {eyou:type typeid='27'}
+                <div class="sub">
+                    <dl>
+                        <dt>{$field.typename}</dt>
+                        <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc3.png" width="80"
+                                           height="80" alt="{$field.typename}"/></dd>
+                        <dd class="des">{$field.seo_description}</dd>
+                    </dl>
+                    </dl>
+                    <ul class="on">
+                        <div class="ul-s">
+                            <h6>红外热像仪</h6>
+                            <li>{$field.seo_description}</li>
+                            <div class="index2n"><a href="{$field.typeurl}" class="btn-a"><em></em><span>查看详情</span></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                {/eyou:type}
+                {eyou:type typeid='28'}
+                <div class="sub">
+                    <dl>
+                        <dt>{$field.typename}</dt>
+                        <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc4.png" width="80"
+                                           height="80" alt="{$field.typename}"/></dd>
+                        <dd class="des">{$field.seo_description}</dd>
+                    </dl>
+                    </dl>
+                    <ul class="on">
+                        <div class="ul-s">
+                            <h6>热解离子探测器</h6>
+                            <li>{$field.seo_description}</li>
+                            <div class="index2n"><a href="{$field.typeurl}" class="btn-a"><em></em><span>查看详情</span></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                {/eyou:type}
             </div>
-          </ul>
         </div>
-        {/eyou:type}
-        {eyou:type typeid='27'}
-        <div class="sub">
-          <dl>
-            <dt>{$field.typename}</dt>
-            <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc3.png" width="80" height="80" alt="{$field.typename}"/></dd>
-            <dd class="des">{$field.seo_description}</dd>
-          </dl>
-          </dl>
-          <ul class="on">
-            <div class="ul-s">
-              <h6>红外热像仪</h6>
-             <li>{$field.seo_description}</li>
-              <div class="index2n"><a href="{$field.typeurl}"  class="btn-a"><em></em><span>查看详情</span></a></div>
-            </div>
-          </ul>
-        </div>
-        {/eyou:type}
-        {eyou:type typeid='28'}
-        <div class="sub">
-          <dl>
-            <dt>{$field.typename}</dt>
-            <dd class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/pc4.png" width="80" height="80" alt="{$field.typename}"/></dd>
-            <dd class="des">{$field.seo_description}</dd>
-          </dl>
-          </dl>
-          <ul class="on">
-            <div class="ul-s">
-              <h6>热解离子探测器</h6>
-             <li>{$field.seo_description}</li>
-              <div class="index2n"><a href="{$field.typeurl}" class="btn-a"><em></em><span>查看详情</span></a></div>
-            </div>
-          </ul>
-        </div>
-        {/eyou:type} </div>
     </div>
-  </div>
-  {eyou:type typeid='5'}
-  <div class="index-case">
-    <div class="index-case-title-box">
-      <div style="box-sizing: border-box;">
-        <a class="index-case-title-a">
-          <span class="index-case-title-icon"></span>
-          <span class="index-case-title">连接管理平台</span>
-        </a>
-        <a class="index-case-title-a">
-          <span class="index-case-title-icon"></span>
-          <span class="index-case-title">连接管理平台</span>
-        </a>
-        <a class="index-case-title-a">
-          <span class="index-case-title-icon"></span>
-          <span class="index-case-title">连接管理平台</span>
-        </a>
-        <a class="index-case-title-a">
-          <span class="index-case-title-icon"></span>
-          <span class="index-case-title">连接管理平台</span>
-        </a>
-      </div>
-    </div>
-    <div class="index-case-content-box">
-        <div class="index-case-content-bg">
-          <div class="index-case-content">
-              <div class="index-case-content-title">连接管理平台</div>
-            <p class="index-case-content-desc">China Mobile OneLink依托新一代中国移动物联网专网，承载数亿用户和几十万家企业客户，为车联网、共享、智慧城市等20多个行业提供全球领先的全制式物联网连接管理服务，用户可通过OneLink自助完成物联卡单卡及批量管理，降低运营成本，提高企业效益。</p>
-            <a class="index-case-content-btn" href="javascript:void(0)">行业案例<span>➜</span></a>
-          </div>
+    {eyou:type typeid='5'}
+    <div class="index-case">
+        <div class="index-case-title-box">
+            <div style="box-sizing: border-box;">
+                <a class="index-case-title-a" onclick="changeContent(this,1)">
+                    <span class="index-case-title-icon"></span>
+                    <span class="index-case-title">电力行业系统解决方案</span>
+                </a>
+                <a class="index-case-title-a" onclick="changeContent(this,2)">
+                    <span class="index-case-title-icon"></span>
+                    <span class="index-case-title">终端电气系统解决方案</span>
+                </a>
+                <a class="index-case-title-a" onclick="changeContent(this,3)">
+                    <span class="index-case-title-icon"></span>
+                    <span class="index-case-title">终端电气系统解决方案</span>
+                </a>
+            </div>
         </div>
+        <div class="index-case-content-box">
+            <div class="index-case-content-bg bg-1">
+                <div class="index-case-content">
+                    <div class="index-case-content-title">电力行业系统解决方案</div>
+                    <p class="index-case-content-desc">专业服务于三峡工程、越南太安水电站、四川乐英水电站等电力企业...</p>
+                    <a class="index-case-content-btn" href="javascript:void(0)">行业案例<span>➜</span></a>
+                </div>
+            </div>
 
-      </div>
-  </div>
-<!--  <div class="index-case">-->
-<!--    <div class="index-title">-->
-<!--      <div class="title">解决方案</div>-->
-<!--      <div class="title-line"></div>-->
-<!--       <p class="tips">{$field.seo_description}</p>-->
+            <div class="index-case-content-bg  bg-2">
+                <div class="index-case-content">
+                    <div class="index-case-content-title">终端电气系统解决方案</div>
+                    <p class="index-case-content-desc">专业服务于浦东机场、北京地铁、奥运场馆等国家重大工程...</p>
+                    <a class="index-case-content-btn" href="javascript:void(0)">行业案例<span>➜</span></a>
+                </div>
+            </div>
+
+            <div class="index-case-content-bg bg-3">
+                <div class="index-case-content">
+                    <div class="index-case-content-title">终端电气系统解决方案</div>
+                    <p class="index-case-content-desc">专业服务于南水北调、青藏铁路、嫦娥探月工程等..</p>
+                    <a class="index-case-content-btn" href="javascript:void(0)">行业案例<span>➜</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  <div class="index-case">-->
+    <!--    <div class="index-title">-->
+    <!--      <div class="title">解决方案</div>-->
+    <!--      <div class="title-line"></div>-->
+    <!--       <p class="tips">{$field.seo_description}</p>-->
+    <!--    </div>-->
+    <!--    <div class="wp" >-->
+    <!--     <ul class="s  cl">-->
+    <!--        {eyou:arclist row='8' titlelen='20' orderby='add_time'}-->
+    <!--        <li> <a href="{$field.arcurl}">-->
+    <!--          <div class="m"><img width="300" height="200" src="{$field.litpic}" class="attachment-post-thumbnail wp-post-image" alt="web-1738168_1920" /></div>-->
+    <!--          <p><span>{$field.title}</span></p>-->
+    <!--          </a> </li>-->
+    <!--        {/eyou:arclist}-->
+    <!--      </ul>-->
+    <!--    </div>-->
+    <!--    <a href="{eyou:field name='typeurl' /}" class="more btn-a"><em></em><span>更多案例</span></a> </div>-->
+    {/eyou:type}
+    <div class="index-news"> {eyou:type typeid='11'}
+        <div class="index-title">
+            <div class="title">{$field.typename}</div>
+            <div class="title-line"></div>
+            <p class="tips">{$field.seo_description}</p>
+        </div>
+        {/eyou:type}
+        <div class="s wp cl"> {eyou:channelartlist type='son' typeid='11' row='3'}
+            <div class="news-list">
+                <div class="list-s">
+                    <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/index-list{$i}.jpg"
+                                        width="368" height="120" alt="{eyou:field name='typename' /}"/>
+                        <p>{eyou:field name='typename' /}</p>
+                    </div>
+                    <ul>
+                        {eyou:arclist row='8' titlelen='20' orderby='add_time'}
+                        <li class='cl'><a href='{$field.arcurl}' title='{$field.title}'><span>{$field.add_time|MyDate='m-d',###}</span>{$field.title}</a>
+                        </li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+            </div>
+            {/eyou:channelartlist}
+        </div>
+    </div>
+    <div class="index-customer index-f"> {eyou:type typeid='29'}
+        <div class="index-title">
+            <div class="title">{$field.typename}</div>
+            <div class="title-line"></div>
+            <p class="tips">{$field.seo_description}</p>
+        </div>
+        {/eyou:type}
+        <div class="s wp">
+            <div id="customer-box" class="customer-box">
+                <div class="bd">
+                    <ul>
+                        {eyou:arclist typeid='29' row='10' titlelen='20' orderby='add_time'}
+                        <li class="cl">
+                            <div class="m"><img src="{$field.litpic}" width="130" height="130" alt="{$field.title}"/>
+                            </div>
+                            <div class="big-title">{$field.title}</div>
+                            <p>{$field.seo_description|msubstr=###,0,400/2}</p>
+<!--                            <div class="s-title">{$field.subtitle}</div>-->
+                        </li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+                <!--bd-->
+                <div class="hd">
+                    <ul>
+                        {eyou:arclist typeid='29' limit='0,1'}
+                        <li class="on"></li>
+                        {/eyou:arclist}
+                        {eyou:arclist typeid='29' limit='1,10'}
+                        <li></li>
+                        {/eyou:arclist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="index-partner index-f"> {eyou:type typeid='4'}-->
+<!--        <div class="index-title">-->
+<!--            <div class="title">{$field.typename}</div>-->
+<!--            <div class="title-line"></div>-->
+<!--            <p class="tips">{$field.seo_description}</p>-->
+<!--        </div>-->
+<!--        {/eyou:type}-->
+<!--        <div class="wp s">-->
+<!--            <ul class="cl">-->
+<!--                {eyou:arclist typeid='4' row='15' titlelen='20' orderby='add_time'}-->
+<!--                <li class="li-{$key}"><a href="JavaScript:" style="background-image: url({$field.litpic})"></a></li>-->
+<!--                {/eyou:arclist}-->
+<!--            </ul>-->
+<!--        </div>-->
 <!--    </div>-->
-<!--    <div class="wp" >-->
-<!--     <ul class="s  cl">-->
-<!--        {eyou:arclist row='8' titlelen='20' orderby='add_time'}-->
-<!--        <li> <a href="{$field.arcurl}">-->
-<!--          <div class="m"><img width="300" height="200" src="{$field.litpic}" class="attachment-post-thumbnail wp-post-image" alt="web-1738168_1920" /></div>-->
-<!--          <p><span>{$field.title}</span></p>-->
-<!--          </a> </li>-->
-<!--        {/eyou:arclist}-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--    <a href="{eyou:field name='typeurl' /}" class="more btn-a"><em></em><span>更多案例</span></a> </div>-->
-  {/eyou:type}
-  <div class="index-customer index-f"> {eyou:type typeid='29'}
-    <div class="index-title">
-      <div class="title">{$field.typename}</div>
-      <div class="title-line"></div>
-      <p class="tips">{$field.seo_description}</p>
-    </div>
-    {/eyou:type}
-    <div class="s wp">
-      <div id="customer-box" class="customer-box">
-        <div class="bd">
-          <ul>
-            {eyou:arclist typeid='29' row='10' titlelen='20' orderby='add_time'}
-            <li class="cl">
-              <div class="m"><img src="{$field.litpic}" width="130" height="130" alt="{$field.title}" /> </div>
-              <div class="big-title">{$field.title}</div>
-              <p>{$field.seo_description|msubstr=###,0,400/2}...</p>
-              <div class="s-title">{$field.subtitle}</div>
-            </li>
-            {/eyou:arclist}
-          </ul>
+    <div class="index-contact">
+        <div class=" wp">
+            <div class="s">
+                <h6>现在，非常期待与您的又一次邂逅</h6>
+                <p>有为物联努力让每一次邂逅总能超越期待</p>
+                <div class="btn"><a
+                        href="https://wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes"
+                        target="_blank" class="btn-a"><em></em><span>立即联系</span></a></div>
+            </div>
         </div>
-        <!--bd-->
-        <div class="hd">
-          <ul>
-            {eyou:arclist typeid='29' limit='0,1'}
-            <li class="on"></li>
-            {/eyou:arclist}
-            {eyou:arclist typeid='29' limit='1,10'}
-            <li></li>
-            {/eyou:arclist}
-          </ul>
-        </div>
-      </div>
+        <div class="cover"></div>
     </div>
-  </div>
-  <div class="index-news"> {eyou:type typeid='11'}
-    <div class="index-title">
-      <div class="title">{$field.typename}</div>
-      <div class="title-line"></div>
-      <p class="tips">{$field.seo_description}</p>
-    </div>
-    {/eyou:type}
-    <div class="s wp cl"> {eyou:channelartlist type='son' typeid='11' row='3'}
-      <div class="news-list">
-        <div class="list-s">
-          <div class="m"><img src="{eyou:global name='web_templets_pc' /}/skin/images/index-list{$i}.jpg" width="368" height="120" alt="{eyou:field name='typename' /}"/>
-            <p>{eyou:field name='typename' /}</p>
-          </div>
-          <ul>
-            {eyou:arclist row='8' titlelen='20' orderby='add_time'}
-            <li class='cl'><a href='{$field.arcurl}' title='{$field.title}'><span>{$field.add_time|MyDate='m-d',###}</span>{$field.title}</a></li>
-            {/eyou:arclist}
-          </ul>
-        </div>
-      </div>
-      {/eyou:channelartlist} </div>
-  </div>
-  <div class="index-partner index-f"> {eyou:type typeid='4'}
-    <div class="index-title">
-      <div class="title">{$field.typename}</div>
-      <div class="title-line"></div>
-      <p class="tips">{$field.seo_description}</p>
-    </div>
-    {/eyou:type}
-    <div class="wp s">
-      <ul class="cl">
-        {eyou:arclist typeid='4' row='15' titlelen='20' orderby='add_time'}
-        <li class="li-{$key}"><a href="JavaScript:" style="background-image: url({$field.litpic})"></a> </li>
-        {/eyou:arclist}
-      </ul>
-    </div>
-  </div>
-  <div class="index-contact">
-    <div class=" wp">
-      <div class="s">
-        <h6>现在，非常期待与您的又一次邂逅</h6>
-        <p>某某网络努力让每一次邂逅总能超越期待</p>
-        <div class="btn"> <a href="https://wpa.qq.com/msgrd?v=3&uin={eyou:global name='web_attr_5' /}&site=qq&menu=yes" target="_blank" class="btn-a"><em></em><span>立即联系</span></a> </div>
-      </div>
-    </div>
-    <div class="cover"></div>
-  </div>
-  <script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.superslide.js"></script>
-  <script src="{eyou:global name='web_templets_pc' /}/skin/js/swiper.min.js"></script>
-  <script>
-$(".customer-box").slide({
-    mainCell:".bd ul",
-    effect:"leftLoop",
-    autoPlay:false,
-    delayTime:800
-});
-    var swiper = new Swiper('.index-banner', {
-        slidesPerView: 1,
-        loop: true,
-        autoplay:true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
+    <script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.superslide.js"></script>
+    <script src="{eyou:global name='web_templets_pc' /}/skin/js/swiper.min.js"></script>
+    <script>
+        $(".customer-box").slide({
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: false,
+            delayTime: 800
+        });
+        var swiper = new Swiper('.index-banner', {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        function changeContent(obj,tag){
+            $(obj).children('.index-case-title-icon').css({"background":"#315ffd","width":"22px"})
+            $(obj).siblings().children('.index-case-title-icon').css({"background":"#ffffff","width":"12px"})
+            $(obj).children('.index-case-title').css({"color":"#315ffd","margin-left":"30px"})
+            $(obj).siblings().children('.index-case-title').css({"color":"#ffffff","margin-left":"40px"})
+            $('.bg-'+tag).css({"z-index":"2","opacity":"1"})
+            $('.bg-'+tag).siblings().css({"z-index":"1","opacity":"0"});
+        }
+    </script>
 </div>
 {eyou:include file='footer.htm'/}
 <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/index.js"></script>
